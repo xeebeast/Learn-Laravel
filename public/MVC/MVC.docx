@@ -1,0 +1,69 @@
+﻿Defination:
+
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: the model, the view, and the controller. 
+
+->the model, the view, and the controller are logical components.
+->Responsibilities are divided.
+
+Vague Idea of MVC:
+->separation of concerns (SoC) is a design principle for separating a computer program into distinct sections, such that each section addresses a separate concern. A concern is a set of information that affects the code of a computer program. A concern can be as general as the details of the hardware the code is being optimized for, or as specific as the name of a class to instantiate. A program that embodies SoC well is called a modular program.
+
+->don't repeat yourself (DRY) is a principle of software development, aimed at reducing repetition of information of all kinds, especially useful in multi-tier architectures. The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+
+Model: The Model component corresponds to all the data related logic that the user works with. This can represent either the data that is being transferred between the View and Controller components or any other business logic related data. For example, a Customer object will retrieve the customer information from the database, manipulate it and update it data back to the database or use it to render data.
+
+View: The View component is used for all the UI logic of the application. For example, the Customer view would include all the UI components such as text boxes, dropdowns, etc. that the final user interacts with.
+
+
+Controller: Controllers act as an interface between Model and View components to process all the business logic and incoming requests, manipulate data using the Model component and interact with the Views to render the final output. For example, the Customer controller would handle all the interactions and inputs from the Customer View and update the database using the Customer Model. The same controller would be used to view the Customer data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Flow Steps
+The client browser sends request to the MVC Application.
+Global.ascx receives this request and performs routing based on the URL of incoming request using the RouteTable, RouteData, UrlRoutingModule and MvcRouteHandler objects.
+This routing operation calls the appropriate controller and executes it using the IControllerFactory object and MvcHandler object's Execute method.
+The Controller processes the data using Model and invokes the appropriate method using ControllerActionInvoker object
+The processed Model is then passed to the View which in turn renders the final output.
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+Commponents:
+The central component of MVC, the model, captures the behavior of the application in terms of its problem domain, independent of the user interface.[5]
+The model directly manages the data, logic and rules of the application.
+
+A view can be any output representation of information, such as a chart or a diagram. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.
+
+The third part, the controller, accepts input and converts it to commands for the model or view
+
+Interactions:
+
+In addition to dividing the application into three kinds of components, the model–view–controller design defines the interactions between them.[7]
+A model stores data that is retrieved according to commands from the controller and displayed in the view.
+
+A view generates new output to the user based on changes in the model.
+
+A controller can send commands to the model to update the model's state (e.g. editing a document). It can also send commands to its associated view to change the view's presentation of the model (e.g. by scrolling through a document).	
+
+
