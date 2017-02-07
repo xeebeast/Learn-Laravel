@@ -28,7 +28,7 @@ class MvcController extends Controller {
 	public function Modal(Request $request)
 	{
 		echo $this->html_head.' 
-			  	<a href="'.url().'/mvc/view">back to view</a>
+			  	<a href="'.url('/').'/mvc/view">back to view</a>
 			  	<h1>Manipulated Data received from Controller and Record Inserted</h1>
 			  	<u><h2>Table Record</h2></u>'.
 			 $this->html_foot;
@@ -61,10 +61,10 @@ class MvcController extends Controller {
 	public function Controller(Request $request)
 	{
 		echo $this->html_head.'
-					<a href="'.url().'/mvc/view">back to view</a>
+					<a href="'.url('/').'/mvc/view">back to view</a>
 					<h1>Data received from Controller:</h1>
 					<h3 style="color:green;">'.$request->text.'</h3>
-					<form method="get" action="'.url().'/mvc/modal">
+					<form method="get" action="'.url('/').'/mvc/modal">
 						<input type="hidden" name="text" value="'.$request->text.'"/>
 						<input type="submit" value="send to modal"/>
 					</form><br>
@@ -82,7 +82,7 @@ class MvcController extends Controller {
 	{
 		echo $this->html_head.' 
 				<h1>User View</h1>
-				<form method="get" action="'.url().'/mvc/controller">
+				<form method="get" action="'.url('/').'/mvc/controller">
 					<input name="text" type="text" placeholder="Enter name" required="required" />
 					<input type="submit" value="send to controller"/>
 				</form>

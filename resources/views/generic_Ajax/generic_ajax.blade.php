@@ -3,6 +3,7 @@
 <input type="text" class="text">
 <input type="button" class="btn-primary check" value="test">
 <h3> Ajax Response </h3><br>
+
 <b id="res"></b>
 
 
@@ -20,7 +21,7 @@
 
         var defObj = $.ajax({
             type: httpmethod,
-            url: "{{{url()}}}"+ url,
+            url: "{{{url('/')}}}"+ url,
             data: data,
             async: async,
             cache: cache,
