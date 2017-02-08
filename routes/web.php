@@ -58,6 +58,10 @@ Route::any('dashboard','AdminDashboardControllre@dashboard');
 Route::any('map','MapController@show');			
 			/*END Maps*/
 
+			/*Laravel*/
+Route::any('laravel/history', 'LaravelStructureController@index');
+			/*END Laravel*/
+
 			/*Demo*/
 Route::get('demo','AdminDashboardControllre@demo');
 Route::get('demoResult','AdminDashboardControllre@demoResult');

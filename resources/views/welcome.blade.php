@@ -59,8 +59,8 @@
 			<div class="content">
 				<div class="title"><b>Laravel Structure</b></div>
 				<div class="quote">
-					<a href="#">
-						<b>Structure through timeline</b>
+					<a href="{{{ url('laravel/history') }}}">
+						<b>History</b>
 					</a>
 				</div>
      		</div>
