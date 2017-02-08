@@ -21,7 +21,7 @@ Please run the migrations and seed at first.
 
 ## Project Topics
 
-#### Laravel Structure
+#### Laravel History and Structure
 #### Bootstrap (In progress)
 #### MVC
 #### Social Login 
