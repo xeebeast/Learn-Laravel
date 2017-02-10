@@ -26,7 +26,7 @@ Please run the migrations and seed at first.
 #### MVC
 #### Social Login 
 	
-	FB, G+, Twitter
+	FB, G+, Twitter.
 
 	note: you need to set-up redirect URLs
 
