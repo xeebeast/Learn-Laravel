@@ -114,6 +114,8 @@
 				<p>	
 					Laravel 5.0 introduces a fresh application structure to the default Laravel project. This new structure serves as a better foundation for building robust application in Laravel, as well as embraces new auto-loading standards (PSR-4) throughout the application.
 				</p>
+				<br>
+				<a href="https://laracasts.com/series/laravel-5-fundamentals"> Learn Laravel </a>
 			</li>
 		</ol>
 	</div> <!-- .events-content -->
