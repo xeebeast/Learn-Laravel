@@ -64,6 +64,7 @@ Route::any('laravel/history', 'LaravelStructureController@index');
 
 			/*Demo*/
 Route::get('demo','AdminDashboardControllre@demo');
+Route::get('aws','AwsController@FileUpload');
 Route::get('demoResult','AdminDashboardControllre@demoResult');
 			/*END Demo*/
 
