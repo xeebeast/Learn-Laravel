@@ -53,6 +53,8 @@ Please run the migrations and seed at first.
 
 ### IONIC framework with Laravel
 
+### Amazon S3 clound storage
+
 
 ## Contributing
 
