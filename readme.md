@@ -1,6 +1,6 @@
 # Learn-Laravel
 
-Learn-Laravel is for programmers who are trying to learn Laravel and facing difficulties in working in it.
+Learn-Laravel is for programmers who are beginning to start using Larvel and want to know its basic concepts quickly.
 
 ## Getting Started
 
