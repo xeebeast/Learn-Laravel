@@ -10,12 +10,12 @@ use Illuminate\Http\Request;
 
 class DatatableController extends Controller
 {
-    public function userDatatable(Request $request)
+    public function users(Request $request)
     {
     	$user = new User();
    	 	$users  = $user->FetchDatatableUserRecords($request);
 
-   	 	$table = 'users';
+   	 	$table = 'users'; // Database table name for the Datatable 
     
     	return view ('genericDatatables.datatable', compact('users','table'));
     }

@@ -47,10 +47,20 @@
 	</div>    
 
 <hr><hr><hr><hr><hr>
+
 </body>
 </html>
 
  <script>
+
+/*
+
+	NOTE:
+
+	You just might have to chagne the URL for fucntions hitting AJAX calls
+
+*/
+
 var page;
 
         var INDEXJS = {
@@ -191,6 +201,7 @@ var page;
 
         }/*end INDEXJS*/
     	
+
         $(document).delegate( ".pagination a", "click", function(e) {   
         
             e.preventDefault();
