@@ -14,7 +14,7 @@ You should have basic knowledge about Laravel and ofcourse PHP.
 
 Please run the migrations and seed at first.
 
-	php artisan serve
+	php artisan migrate
 
 	php artisan db:seed
 
