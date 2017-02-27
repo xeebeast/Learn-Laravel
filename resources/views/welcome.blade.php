@@ -161,6 +161,17 @@
      		</div>
      	</div>
 
+     	<div class="container">
+			<div class="content">
+				<div class="title"><b>Generic Datatable</b></div>
+				<div class="quote">
+					<a href="{{{url('datatable/users')}}}">
+						<b>Datatable</b>
+					</a>
+				</div>
+     		</div>
+     	</div>
+
 <!-- Javascript for Welcome page -->
 
 <script type="text/javascript">

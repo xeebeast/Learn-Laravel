@@ -64,6 +64,8 @@ Route::any('laravel/history', 'LaravelStructureController@index');
 
 			/*DataTable*/
 Route::any('datatable/users', 'DatatableController@userDatatable');
+Route::any('datatable/users/update', 'DatatableController@userDatatable');
+Route::any('datatable/users/update/search', 'DatatableController@searchDataTables');
 			/*End DataTable*/			
 
 			/*Demo*/

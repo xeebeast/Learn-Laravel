@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
+use DB;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -32,9 +33,8 @@ class User extends Authenticatable
     /*users*/
     public function FetchDatatableUserRecords($request)
     {
-        return DB::table('learn-laravel_users')
+        return DB::table('users')
                  ->select('id', 'name')
-                 ->where('user_type_idFk', 1)
                  ->orderBy('id', 'DESC')
                  ->paginate(5);
     }
@@ -45,16 +45,14 @@ class User extends Authenticatable
         {
             $term = $request->term;
             
-            return  DB::table('learn-laravel_users')
+            return  DB::table('users')
                       ->select('id' ,'name')
-                      ->where('firstname', 'like', "%$term%")->orWhere('lastname', 'like', "%$term%")
-                      ->where('user_type_idFk', 1)
+                      ->where('name', 'like', "%$term%")
                       ->orderBy('id', 'DESC')
                       ->paginate($request->range);
         }
 
-        return DB::table('learn-laravel_users')
-                 ->where('user_type_idFk', 1)
+        return DB::table('users')
                  ->select('id' ,'name')
                  ->orderBy('id', 'DESC')
                  ->paginate($request->range);    
@@ -64,12 +62,9 @@ class User extends Authenticatable
     {
         $term = $request->term;
 
-        return DB::table('learn-laravel_users')
+        return DB::table('users')
                  ->select('id' ,'name')
-                 ->where('firstname', 'like', "%$term%")
-                 ->where('user_type_idFk', '1')
-                 ->orWhere('lastname', 'like', "%$term%")
-                 ->where('user_type_idFk', '1')
+                 ->where('name', 'like', "%$term%")
                  ->orderBy('id', 'DESC')
                  ->paginate($request->range);
     }

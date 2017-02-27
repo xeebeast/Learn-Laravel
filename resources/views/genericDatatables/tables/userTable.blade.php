@@ -8,7 +8,7 @@
             <th class="text-left">name</th>
             <th class="text-left">ID</th>
         </tr>
-        @foreach($table as $data)
+        @foreach($users as $data)
             <tr>
                 <td class="paginate-columns">{{ $data->name }}</td>
                 <td class="paginate-columns">{{ $data->id }}</td>
@@ -17,5 +17,5 @@
          @endforeach
     </thead>
 </table>
-{{ $table->links() }}
+{{ $users->links() }}
 </div><!-- /.box-body -->
