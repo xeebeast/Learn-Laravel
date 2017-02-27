@@ -15,7 +15,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <span>show</span>
-                        <select class="range" id="users-range" data-datatable="users">
+
+                        <select class="range" id="{{$table}}-range" data-datatable="{{$table}}">
                           <option value="5">5</option>
                           <option value="10">10</option>
                           <option value="15">15</option>
@@ -25,10 +26,10 @@
                     </div>
 
                     <div class="col-md-4">
-                        <input type="text" class="userSearch" data-datatable="users" id="users-Search" name="search" value="" placeholder="Search record">
+                        <input type="text" class="userSearch" data-datatable="{{$table}}" id="{{$table}}-Search" name="search" value="" placeholder="Search record">
                     </div>
                 </div>
-                <span class="users-content">@include('Admin::includeAdmins.usersPartial')</span>
+                <span class="{{$table}}-content">@include('genericDatatables.tables.userTable')</span>
             </div>
         </div>
         <!-- Panel code ends here -->   

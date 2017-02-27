@@ -62,6 +62,10 @@ Route::any('map','MapController@show');
 Route::any('laravel/history', 'LaravelStructureController@index');
 			/*END Laravel*/
 
+			/*DataTable*/
+Route::any('datatable/users', 'DatatableController@userDatatable');
+			/*End DataTable*/			
+
 			/*Demo*/
 Route::get('demo','AdminDashboardControllre@demo');
 Route::get('aws','AwsController@FileUpload');
