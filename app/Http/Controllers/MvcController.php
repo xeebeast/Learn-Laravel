@@ -32,6 +32,10 @@ class MvcController extends Controller {
 			  	<h1>Manipulated Data received from Controller and Record Inserted</h1>
 			  	<u><h2>Table Record</h2></u>'.
 			 $this->html_foot;
+			 echo "<br>
+				 <h4>
+					Interaction with the database is done in Model
+				 </h4>";
 
 		try {
 				$insert = DB::table("users")->insert(["name" => $request->text]);	  
@@ -45,11 +49,7 @@ class MvcController extends Controller {
 			 	
 			 	print_r($request->text);
 			}	 
-			  
-		    echo "<br>
-				 <h4>
-					Interaction with the database is done in Model
-				 </h4>";	  
+			  	  
 	}
 
 /*
@@ -62,7 +62,7 @@ class MvcController extends Controller {
 	{
 		echo $this->html_head.'
 					<a href="'.url('/').'/mvc/view">back to view</a>
-					<h1>Data received from Controller:</h1>
+					<h1>Data received from View to Controller:</h1>
 					<h3 style="color:green;">'.$request->text.'</h3>
 					<form method="get" action="'.url('/').'/mvc/modal">
 						<input type="hidden" name="text" value="'.$request->text.'"/>
@@ -86,7 +86,7 @@ class MvcController extends Controller {
 					<input name="text" type="text" placeholder="Enter name" required="required" />
 					<input type="submit" value="send to controller"/>
 				</form>
-				<p> note : Please run migration to fully understand the Model </p><br>
+				<p> note : Please (if not) run migration to fully understand the Model </p><br>
 				<h4>
 					View is just the graphical representaion of the UI elements <br>
 					-> User Interact with these elements

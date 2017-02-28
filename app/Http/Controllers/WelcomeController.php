@@ -1,4 +1,9 @@
-<?php namespace App\Http\Controllers;
+<?php
+/*
+    Created By -- Zeshan Tariq
+    Date       -- 5/9/16	
+*/ 
+namespace App\Http\Controllers;
 
 class WelcomeController extends Controller {
 

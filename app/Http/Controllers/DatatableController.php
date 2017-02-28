@@ -1,5 +1,8 @@
 <?php
-
+/*
+    Created By -- Zeshan Tariq
+    Date       -- 27/2/17	
+*/ 
 namespace App\Http\Controllers;
 
 use App\User;

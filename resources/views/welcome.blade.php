@@ -51,6 +51,20 @@
 			}
 		</style>
 <!-- END Style -->
+	
+	<!-- Check for slow internet connection -->
+
+	<script type="text/javascript">
+	    var slowLoad = window.setTimeout( function() {
+	        alert( "slow internet connection" );
+	    }, 5000 );
+
+	    window.addEventListener( 'load', function() {
+	        window.clearTimeout( slowLoad );
+	    }, false );
+	</script>
+
+	<!-- Script End -->
 
 	</head>
 	<body>

@@ -46,6 +46,8 @@ Please run the migrations and seed at first.
 
 ### User Registration and login
 
+### Laravel Middlewares
+
 ### REDIS
 
 	Redis as DATABASE
