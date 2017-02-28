@@ -38,11 +38,13 @@ Please run the migrations and seed at first.
 
 #### Admin Dashboard Layout (In progress)
 
-## Still to come
-
-### Generic Datatables
+#### Generic Datatables
 	
 	without any 3rd party tool
+
+## Still to come
+
+### User Registration and login
 
 ### REDIS
 
