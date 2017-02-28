@@ -195,5 +195,13 @@ var page;
 
         }, 10000);
 
+        /*Date*/
 
+        var time = setInterval( function() 
+        {
+            var today = new Date;
+            document.getElementById('date').innerHTML= today;
+
+        }, 1000);
+            
 </script>

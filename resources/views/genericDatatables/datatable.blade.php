@@ -12,7 +12,9 @@
 <hr>&nbsp;&nbsp;See the model 'User', it contains two functions for datatable.
 <hr>&nbsp;&nbsp;See 'DatatableController' for redirecting functionality, you can update it according to your need.
 <hr>
-<h3> <b>&nbsp;&nbsp; View Under construction </b> </h3>
+<h3> <b>&nbsp;&nbsp; View Under construction: &nbsp; </b> <span id="date"></span> </h3>
+<br>
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -54,7 +56,6 @@
 
 <hr><hr><hr><hr><hr>
 
+@include('genericDatatables.scripts.userScript')exit		
 </body>
 </html>
-
-@include('genericDatatables.scripts.userScript')

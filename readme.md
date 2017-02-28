@@ -33,6 +33,9 @@ Please run the migrations and seed at first.
 <a href='https://github.com/laravel/socialite#configuration'> Laravel-Socialite  </a> 
 
 #### Generic AJAX
+	
+	Still writing same code again and again ?
+
 #### Admin Dashboard Layout (In progress)
 
 ## Still to come
