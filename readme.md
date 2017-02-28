@@ -44,8 +44,6 @@ Please run the migrations and seed at first.
 	
 	without any 3rd party tool
 
-	just Laravel Paginator and JQUERY
-
 ### REDIS
 
 	Redis as DATABASE
