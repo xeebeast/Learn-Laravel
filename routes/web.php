@@ -74,3 +74,9 @@ Route::get('aws','AwsController@FileUpload');
 Route::get('demoResult','AdminDashboardControllre@demoResult');
 			/*END Demo*/
 
+Route::get('publish', function () {
+    // Route logic...
+
+    Redis::publish('test-channel', json_encode(['foo' => 'bar']));
+});			
+
